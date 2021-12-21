@@ -1,0 +1,297 @@
+/* MONTSERRAT */
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../../fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../../fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('../../fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../../fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratthin';
+    src: url('../../fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* LOBSTER*/
+
+@font-face {
+    font-family: 'lobsterregular';
+    src: url('../../fonts/lobster/lobster-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/lobster/lobster-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-image: url(../../media/img/b784dfc3e69362ca47e3c39c31f0ecc8.jpg);
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #101010;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    
+}
+
+header img {
+    width: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 40px;
+}
+
+header nav ul li a {
+
+    /* Je debug l'affichage de l'élément avec un simple display: flex; */
+    display: flex;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    color: grey;
+    transform-origin: 50% 50%;
+    transform: scale(1);
+    transition: all linear 0.2s;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #101010;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+}
+
+/*section:nth-child(odd) {
+    background-color: #141414;
+}*/
+
+/*section > div {
+    min-height: 25vh;
+}*/
+
+footer ul {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer ul li {
+    margin: 10px 0;
+}
+
+/*.bg-blue {
+    background-color: steelblue;
+}
+
+.bg-gold {
+    background-color: gold;
+}
+
+.bg-green {
+    background-color: forestgreen;
+}*/
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: top 80px;
+}
+
+section:not(:last-child) {
+    margin-bottom: 80px;
+}
+
+section > div {
+    padding: 20px;
+}
+
+section:first-child > div,
+section:last-child > div:first-child {
+    width: 33.33%;
+}
+
+section:nth-child(2) > div {
+    width: 50%;
+}
+
+section:last-child > div:last-child {
+    width: 66.66%;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+}
+
+section:nth-child(2) .images {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+section:first-child > div:nth-child(1) > a {
+    background-image: url("../img/s1b1.jpeg");
+}
+
+section:first-child > div:nth-child(2) > a {
+    background-image: url("../img/s1b2.jpeg");
+}
+
+section:first-child > div:nth-child(3) > a {
+    background-image: url("../img/s1b3.jpeg");
+}
+
+section:first-child > div > a {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    transform-origin: 50% 50%;
+    transform: scale(1);
+    transition: all linear 0.2s;
+}
+
+section:first-child > div > a:hover {
+    transform: scale(1.05);
+}
+
+section:first-child > div > a > p {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 60px 0;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+}
+
+section:not(:first-child) > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+section:last-child > div:first-child > p {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+section:last-child {
+    background-color: #000;
+}
+
+.article {
+    flex-direction: column;
+}
+
+.article h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.article p {
+    text-align: center;
+    padding: 20px;
+    line-height: 2em;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.toto{
+    background-image: url(../../media/img/ob_ebcc2d_experience-iobsp.jpg);
+
+}
+
